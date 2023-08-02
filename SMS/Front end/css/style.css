@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+/*****************HOME SECTION START**********************/
+.home_page{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background:url('../img/background.jpg');
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-size: 3em;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    user-select: none;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style-type: none;
+}
+header .navigation li a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+header .navigation li a:hover{
+    color: #40c3ff;
+}
+header .navigation li .btn{
+    padding: 10px 27px;
+    border: none;
+    outline: none;
+   background: #40c3ff;
+   border-radius: 20px;
+   color: #fff;
+   font-size: 1.1em;
+   font-weight: 400;
+   transition: 0.5s;
+}
+header .navigation li .btn:hover{
+    color: #000;
+}
+.content{
+    max-width: 800px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.content h2{
+    font-size: 3.8em;
+    color: #fff;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.content h2 span{
+    color: #40c3ff;
+    font-weight: 800;
+}
+
+/*****************HOME SECTION END**********************/
+
+
+/*****************FEATURE SECTION START**********************/
+.feature_section{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    padding: 100px;
+
+}
+.feature_section h2,.memeber_section h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+@media (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+}
+
+.grid {
+  display: grid;
+  width: 70rem;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+@media (max-width: 60em) {
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+.grid__item {
+  background-color: #fff;
+  border-radius: .4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.grid__item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+.card{
+    height: 300px;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+.card__content {
+  padding: 1.5rem 1.5rem;
+}
+.card__content i{
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+.card__header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card__text {
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+.card__btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #e6ecff;
+  border: none;
+  border-radius: .4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card__btn:hover, .card__btn:active {
+  background-color: #dce4ff;
+}
+.card__btn:hover span, .card__btn:active span {
+  margin-left: 1.5rem;
+}
+
+/*****************FEATURE SECTION END**********************/
+
+
+/*****************COMMITTEE MEMBERS SECTION START**********************/
+.profile_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 300px;
+    margin-right:40px;
+   
+  }
+  .conatiner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .profile_card .container p{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 10px;
+  }
+  
+
+/*****************COMMITTEE MEMBERS SECTION END**********************/
+
+
+.footer_container{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #111;
+    color: #fff;
+}
+.footer_container h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 18px;
+}
+.footer_container .social{
+  text-align: center;
+  margin-top: 14px;
+}
+.footer_container .social a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  padding-right: 20px;
+  transition: 0.5s;
+}
+.footer_container .social a:hover:nth-child(1){
+  color:#00acee ;
+}
+.footer_container .social a:hover:nth-child(2){
+  color:#3b5998  ;
+}
+.footer_container .social a:hover:nth-child(3){
+  color:#db3236 ;
+}
+.footer_container .social a:hover:nth-child(4){
+  color:#dd2a7b;
+}
+.footer_container .social a:hover:nth-child(5){
+  color:#0e76a8 ;
+}
+
+
+.footer_container .copyright{
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+  
+
+
